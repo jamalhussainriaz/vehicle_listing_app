@@ -1,6 +1,27 @@
 <?php
 
 include './header.php';
+
+require_once __DIR__ . "/../../app/classes/VehicleManager.php"; 
+
+if($_SERVER["REQUEST_METHOD"] === "POST"){
+
+    $vehicleManager = new VehicleManager("", "", "", "");
+
+    if(isset($_POST)){
+        $data = [
+            "name" => $_POST['name'],
+            "type" => $_POST['type'],
+            "price" => $_POST['price'],
+            "image" => $_POST['image'],
+        ];
+        $vehicleManager->addVehicle($data);
+        header("Location: ../index.php");
+        exit;
+    }
+
+}
+
 ?>
 
 <div class="container my-4">
