@@ -7,6 +7,10 @@ require_once 'FileHandler.php';
 class VehicleManager extends VehicleBase implements VehicleActions {
     use FileHandler;
 
+    public function __construct($name = "", $type = "", $price = "", $image = "") {
+        parent::__construct($name, $type, $price, $image);
+    }
+
     public function addVehicle($data) {
 
         $vehicles = $this->readFile();
@@ -37,6 +41,16 @@ class VehicleManager extends VehicleBase implements VehicleActions {
     public function viewVehicle($id) {
         $vehicles = $this->readFile();
         return $vehicles[$id];
+    }
+
+    // Implement abstract method
+    public function getDetails() {
+        return [
+            "name"  => $this->name,
+            "type"  => $this->type,
+            "price" => $this->price,
+            "image" => $this->image
+        ];
     }
 
 }

@@ -4,7 +4,7 @@ require_once __DIR__ . "/../app/classes/VehicleManager.php";
 
 include './views/header.php';
 
-$vehicleManager = new VehicleManager("", "", "", "");
+$vehicleManager = new VehicleManager();
 $vehicles = $vehicleManager->getVehicles();
 
 ?>

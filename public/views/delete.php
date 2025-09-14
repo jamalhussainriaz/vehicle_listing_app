@@ -3,7 +3,7 @@ require_once __DIR__ . "/../../app/classes/VehicleManager.php";
 
 include './header.php';
 
-$vehicleManager = new VehicleManager("", "", "", "");
+$vehicleManager = new VehicleManager();
 
 $id = $_GET['id'];
 

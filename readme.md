@@ -11,7 +11,7 @@ Create a trait to handle JSON file operations for reading and writing.
 
 # VehicleActions Interface
 
-Define methods: addVehicle, editVehicle, deleteVehicle, getVehicles.
+Define methods: addVehicle, editVehicle, deleteVehicle, getVehicles, viewVehicle.
 
 # VehicleBase Abstract Class
 

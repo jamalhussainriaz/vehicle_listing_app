@@ -22,7 +22,7 @@ if(!$vehicle){
 
 if($_SERVER["REQUEST_METHOD"] === "POST"){
 
-    $vehicleManager = new VehicleManager("", "", "", "");
+    $vehicleManager = new VehicleManager();
 
     if(isset($_POST)){
         $data = [

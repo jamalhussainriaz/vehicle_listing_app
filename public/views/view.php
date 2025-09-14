@@ -11,8 +11,9 @@ if($id === null){
     exit;
 }
 
-$vehicleManager = new VehicleManager("", "", "", "");
+$vehicleManager = new VehicleManager();
 $vehicle = $vehicleManager->viewVehicle($id);
+//$vehicle = $vehicleManager->getDetails();
 
 
 if(!$vehicle){
@@ -25,6 +26,9 @@ $type = $vehicle['type']?? null;
 $price = $vehicle['price']?? null;
 $image_src = $vehicle['image']?? null;
 
+// echo '<pre>';
+// print_r($vehicle);
+// exit;
 ?>
 
 

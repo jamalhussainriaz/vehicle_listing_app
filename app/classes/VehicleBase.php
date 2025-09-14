@@ -16,7 +16,7 @@ abstract class VehicleBase {
 
     }
 
-    abstract function viewVehicle($id);
+    abstract function getDetails();
     
     Public function anotherMethod(){
         return "Hi";
