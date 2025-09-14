@@ -46,6 +46,10 @@ Create a form pre-filled with vehicle data to update details using the editVehic
 
 Confirm deletion and remove the vehicle using the deleteVehicle method.
 
+# View Vehicle Page
+
+View vehicle details.
+
 # Index Page
 
 List all vehicles in a Bootstrap card layout.
